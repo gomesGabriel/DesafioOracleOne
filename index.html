@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <img src="img/logo.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section class="secaoEsquerda">
+            <textarea id="texto" cols="60" rows="10" placeholder="Digite seu texto"></textarea>
+            <div class="aviso">
+                <img src="img/aviso_preto.png" alt="Ícone aviso">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botoes">
+                <button id="cript" onclick="cript()">Criptografar</button>
+                <button id="decript" onclick="decript()">Descriptografar</button>
+            </div>
+        </section>
+        <section id="secaoDireita">
+            <div id="baguncinha">
+                <img src="img/pessoa_com_lupa.png" alt="Pessoa com lupa">
+                <p class="mensagemDestaque">Nenhuma mensagem encontrada</p>
+                <p class="mensagemObs">Digite um texto que você deseja<br>criptografar ou descriptografar.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer><link href="https://www.linkedin.com/in/gabriel-gomes-57bb31160/">Linkedin</footer>
+        
+    <script src="js/app.js"></script>
 </body>
 </html>

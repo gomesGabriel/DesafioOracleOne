@@ -1,3 +1,242 @@
-.body{
-    color:aqua;
+:root{
+    --cor-de-fundo: #F3F5FC;
+    --cor-principal: #0A3871;
+    --cor-hover-btn1: #1c58a1;
+    --cor-hover-btn2: #acb3bb;
+    --cor-secundária: #D8DFE8;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+header img{
+    margin-top: 5px;
+    margin-left: 5%;
+    gap: 5%;
+    width: 40px;
+    height: auto;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding-left: 15%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.secaoEsquerda{
+    width: 40%;
+    height: 80%;
+    margin-top: 5%;
+}
+
+.secaoEsquerda textarea{
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    font-size: 20px;
+    resize: none;
+    border-radius: 24px;
+    text-transform: lowercase;
+    border: none;
+}
+
+.secaoEsquerda textarea::placeholder{
+    text-transform: none;
+    font-family: "Inter", sans-serif;
+    color: var(--cor-principal);
+    border: none;
+    resize: none;
+}
+
+.secaoEsquerda textarea:focus{
+    outline: none;
+}
+
+.botoes{
+    width: 680px;
+    height: 67px;
+    top: 885px;
+    left: 240px;
+    gap: 24px; 
+}
+
+#cript{
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--cor-principal); 
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: white;    
+    cursor: pointer;
+}
+
+#cript:hover{
+    background-color: var(--cor-hover-btn1);
+}
+
+#decript{
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--cor-secundária);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-principal);  
+    cursor: pointer
+}
+
+#decript:hover{
+    background-color: var(--cor-hover-btn2);
+    
+}
+
+#secaoDireita{
+    width: 25%;
+    height: 80%;
+    margin-right: 25%;
+    display:flow-root;
+    background-color: white;
+    border-radius: 24px;
+}
+
+#secaoDireita img{
+    padding-top: 30%;
+    width: 100%;
+}
+
+.mensagemDestaque{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+}
+
+.mensagemObs{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+    gap: 0px;
+}
+
+.texto{
+    width: 680px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
+    gap: 0px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    background: var(--cor-principal);
+}
+
+.aviso{
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: left;    
+}
+
+.aviso img{
+    width: 2%;
+    height: auto;
+}
+
+.aviso p{
+    font-size: 12px;
+}
+
+#secaoDireitaAtt{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#secaoDireitaAtt textarea{
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    font-size: 20px;
+    resize: none;
+    border-radius: 24px;
+    text-transform: lowercase;
+    border: none;
+    cursor: auto;
+}
+
+#secaoDireitaAtt textarea::placeholder{
+    text-transform: none;
+    font-family: "Inter", sans-serif;
+    color: var(--cor-principal);
+    resize: none;
+    border: none;
+}
+
+#secaoDireitaAtt textarea:focus{
+    outline: none;
+}
+
+.botoes2{
+    width: 100%;
+    height: 67px;
+    top: 885px;
+    left: 240px;
+    gap: 24px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copiar{
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--cor-principal); 
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: white;    
+    cursor: pointer;
+}
+
+#copiar:hover{
+    background-color: var(--cor-hover-btn1);
 }
